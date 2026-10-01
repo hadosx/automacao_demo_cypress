@@ -6,24 +6,8 @@ beforeEach(() => {
 });
 
 describe('CN04 - Interações com Tabelas Web', () => {
-    it('Deve consultar usuário com sucesso', () => {
-        const user1 = {
-            nome: 'Cierra',
-            sobreNome: 'Vega',
-            idade: '39',
-            email: 'cierra@example.com',
-            salario: '10000',
-            departamento: 'Insurance'
-        }
-        cy.get('tbody > :nth-child(1) > :nth-child(1)').should('have.text', user1.nome)
-        cy.get('tbody > :nth-child(1) > :nth-child(2)').should('have.text', user1.sobreNome)
-        cy.get('tbody > :nth-child(1) > :nth-child(3)').should('have.text', user1.idade)
-        cy.get('tbody > :nth-child(1) > :nth-child(4)').should('have.text', user1.email)
-        cy.get('tbody > :nth-child(1) > :nth-child(5)').should('have.text', user1.salario)
-        cy.get('tbody > :nth-child(1) > :nth-child(6)').should('have.text', user1.departamento)
-    });
 
-    it.only('Deve criar usuário com sucesso ', () => {
+    it('Deve criar e consullar usuário com sucesso ', () => {
         cy.get('#addNewRecordButton').click()
 
         const usuario = {
