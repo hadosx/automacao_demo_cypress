@@ -1,0 +1,17 @@
+{
+  "name": "automacao_demo_cypress",
+  "version": "1.0.0",
+  "description": "Automação Web completa para referência de QA's",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alex Soares",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@faker-js/faker": "^10.6.0",
+    "cypress": "^16.1.1"
+  }
+}
